@@ -71,6 +71,8 @@ the problem.
 
 # Level 2 -> Basic commands : #
 
+## A: About installation : ##
+
 1. **Display docker commands**  
 ```bash
 docker
@@ -82,6 +84,14 @@ docker --version
 ```
 ▼<br>
 Docker version 20.10.0, build ...
+
+***
+3. **Display docker version with details**   
+To display more info about the docker engine, of client and server.
+```bash
+docker version
+```
+
 
 
 
