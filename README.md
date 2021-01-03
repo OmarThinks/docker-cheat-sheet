@@ -152,6 +152,13 @@ docker images
 	REPOSITORY        TAG       IMAGE ID       CREATED       SIZE<br>
 	docker/getting-started   latest    021a1b85e641   3 weeks ago   27.6MB
 
+2. **Download a new Image**   
+Downlaod any image from docker hub
+```bash
+docker pull ubuntu
+```
+This code will download the ubuntu docker image
+
 
 
 
