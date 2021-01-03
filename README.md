@@ -141,6 +141,14 @@ You can find a list of images on the <a
 href="https://hub.docker.com/">Docker Hub Website</a>.
 
 ## Images Commands: ##
+```bash
+docker images
+docker pull <image_name>
+docker rmi <image_name>
+docker rmi <image_name> --force
+docker rmi <image_name> -f
+
+```
 
 
 1. **Display Installed Docker images**   
