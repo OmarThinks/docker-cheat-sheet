@@ -125,7 +125,7 @@ docker images --help
 ▼<br>
 Learn how to use the **images** order
 
-5. **Login to docker hub**   
+6. **Login to docker hub**   
 ```bash
 docker login
 ```
@@ -136,11 +136,21 @@ docker hub account created.
 
 
 # Level 3 -> Images : #
+**Images are the prototypes of the containers.**<br>
+You can find a list of images on the <a 
+href="https://hub.docker.com/">Docker Hub Website</a>.
+
+## Images Commands: ##
 
 
-
-
-
+1. **Display Installed Docker images**   
+To display a list of images that you have
+```bash
+docker images
+```
+▼<br>
+	REPOSITORY        TAG       IMAGE ID       CREATED       SIZE<br>
+	docker/getting-started   latest    021a1b85e641   3 weeks ago   27.6MB
 
 
 
