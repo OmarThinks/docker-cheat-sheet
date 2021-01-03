@@ -168,8 +168,14 @@ docker rmi ubuntu
 This code will uninstall the ubuntu docker image.  
 Now when we run **`docker images`** will will notice that 
 the ubuntu mage has been removed.
-
-
+```bash
+docker rmi ubuntu --force
+```
+or
+```bash
+docker rmi ubuntu -f
+```
+This will force the image removal.
 
 
 
