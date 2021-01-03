@@ -142,6 +142,83 @@ href="https://hub.docker.com/">Docker Hub Website</a>.
 
 ## Images Commands: ##
 ```bash
+docker pull <image_name>
+docker images
+docker rmi <image_name>
+docker rmi <image_name> --force
+docker rmi <image_name> -f
+
+```
+
+
+1. **Download a new Image**   
+Downlaod any image from docker hub
+```bash
+docker pull <image_name>
+docker pull ubuntu
+```
+This code will download the ubuntu docker image
+
+
+
+2. **Display Installed Docker images**   
+To display a list of images that you have
+```bash
+docker images
+```
+▼<br>
+	REPOSITORY        TAG       IMAGE ID       CREATED       SIZE<br>
+	docker/getting-started   latest    021a1b85e641   3 weeks ago   27.6MB
+
+
+3. **Remove Image**   
+To remove an existing image
+```bash
+docker rmi <image_name>
+docker rmi ubuntu
+```
+This code will uninstall the ubuntu docker image.  
+Now when we run **`docker images`** will will notice that 
+the ubuntu mage has been removed.
+```bash
+docker rmi ubuntu --force
+```
+or
+```bash
+docker rmi ubuntu -f
+```
+This will force the image removal.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Level 4 -> Containers : #
+
+## Containers Commands: ##
+```bash
 docker images
 docker pull <image_name>
 docker rmi <image_name>
@@ -151,14 +228,16 @@ docker rmi <image_name> -f
 ```
 
 
-1. **Display Installed Docker images**   
-To display a list of images that you have
+1. **Create a Docker Container**   
+To create an image from a container
 ```bash
-docker images
+docker run <image_name>
+docker run ubuntu
+
 ```
-▼<br>
-	REPOSITORY        TAG       IMAGE ID       CREATED       SIZE<br>
-	docker/getting-started   latest    021a1b85e641   3 weeks ago   27.6MB
+If the image name (Ubuntu in this example) was not
+ pulled, it will be pulled and run.
+
 
 2. **Download a new Image**   
 Downlaod any image from docker hub
@@ -184,6 +263,7 @@ or
 docker rmi ubuntu -f
 ```
 This will force the image removal.
+
 
 
 
