@@ -71,7 +71,18 @@ the problem.
 
 # Level 2 -> Basic commands : #
 
-## A: About installation : ##
+## A: About Docker commands : ##
+```bash
+docker
+docker --version
+docker -V
+docker version
+docker info
+docker help
+docker images --help
+docker login
+```
+
 
 1. **Display docker commands**  
 ```bash
@@ -119,10 +130,12 @@ Learn how to use the **images** order
 ```bash
 docker login
 ```
-Now enter username and password
+Now enter username and password, you should have a 
+docker hub account created.
 
 
 
 
+## B: Images : ##
 
 
