@@ -1,5 +1,11 @@
 # Docker Cheat Sheet
 
+## References : ##
+**Youtube:** <a href="https://www.youtube.com/watch?v=wi-MGFhrad0&list=PLhW3qG5bs-L99pQsZ74f-LC-tOEsBp2rK&index=1">
+Automation Step by Step - Playlist - Docker
+</a>
+
+
 ## Why Docker? ##
 1. **The same behaviour on different devices**  
 With docker you can make sure that your code 
@@ -33,6 +39,16 @@ use published docker images.
 
 
 
+## Installing Docker : ##
+
+- **On Linux:** <a href="https://www.youtube.com/watch?v=KCckWweNSrM&list=PLhW3qG5bs-L99pQsZ74f-LC-tOEsBp2rK&index=5">
+Youtube - Automation Step by Step - Playlist - Docker - Install
+on Linux
+</a>
+
+- **On Windows:** <a href="https://www.youtube.com/watch?v=wi-MGFhrad0&list=PLhW3qG5bs-L99pQsZ74f-LC-tOEsBp2rK&index=6">
+Youtube - Automation Step by Step - Playlist - Docker - Install
+on Windows</a>
 
 
 
