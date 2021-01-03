@@ -58,7 +58,7 @@ In the command line (I am using Git-Bash on Windows for example)
 
 Run this command:
 ```bash
-$ docker
+docker
 ```
 And you should see a list of docker commands.  
 If you did not see a list of commands, then you need to troubleshoot
@@ -71,8 +71,17 @@ the problem.
 
 # Level 2 -> Basic commands : #
 
+1. **Display docker commands.**
 
+```bash
+docker
+```
+***
+2. **Display docker commands.**
 
+```bash
+docker
+```
 
 
 
