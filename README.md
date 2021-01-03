@@ -160,6 +160,16 @@ docker pull ubuntu
 This code will download the ubuntu docker image
 
 
+3. **Remove Image**   
+To remove an existing image
+```bash
+docker rmi ubuntu
+```
+This code will uninstall the ubuntu docker image.  
+Now when we run **`docker images`** will will notice that 
+the ubuntu mage has been removed.
+
+
 
 
 
