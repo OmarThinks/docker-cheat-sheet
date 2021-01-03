@@ -71,18 +71,17 @@ the problem.
 
 # Level 2 -> Basic commands : #
 
-1. **Display docker commands.**
-
+1. **Display docker commands**  
 ```bash
 docker
 ```
 ***
-2. **Display docker commands.**
-
+2. **Display docker version**   
 ```bash
-docker
+docker --version
 ```
-
+▼<br>
+Docker version 20.10.0, build ...
 
 
 
