@@ -14,6 +14,10 @@ And there can be **lots of** runtime **docker containers**
 , but there can 
 only be a **single Docker Image** for similar docker containers. 
 
+**Dockerhub**: https://hub.docker.com/  
+	a place to publish docker images, and 
+use published docker images.
+
 **DockerFile** : Used to create docker images
 
 
