@@ -50,6 +50,10 @@ on Linux
 Youtube - Automation Step by Step - Playlist - Docker - Install
 on Windows</a>
 
+- **On Mac:** <a href="https://www.youtube.com/watch?v=wi-MGFhrad0&list=PLhW3qG5bs-L99pQsZ74f-LC-tOEsBp2rK&index=7">
+Youtube - Automation Step by Step - Playlist - Docker - Install
+on Mac</a>
+
 
 
 
