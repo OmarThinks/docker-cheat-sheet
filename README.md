@@ -2,7 +2,10 @@
 
 ## Why Docker? ##
 1. **The same behaviour on different devices**  
-With docker you can make sure that your code will show the same results on different devices and platforms.
+With docker you can make sure that your code 
+will show the same results on different devices and platforms.  
+So code will work on the testing environment exactily like
+it works on the production environment.
 2. **Publish your projects, and use other's projects**  
 When a project is published on dockerhub, you can pull it easily  
 also others can pull your projects
