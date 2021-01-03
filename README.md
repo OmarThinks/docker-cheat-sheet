@@ -239,12 +239,23 @@ If the image name (Ubuntu in this example) was not
  pulled, it will be pulled and run.
 
 
-2. **Download a new Image**   
-Downlaod any image from docker hub
+2. **Display Containers**   
+This commands will display the containers.
 ```bash
-docker pull ubuntu
+docker ps
 ```
-This code will download the ubuntu docker image
+This code will display info about containers like this:  
+	CONTAINER ID   IMAGE                    COMMAND                  CREATED       STATUS       PORTS                NAMES
+	b3f6bcc79205   docker/getting-started   "/docker-entrypoint.ΓÇª"   6 hours ago   Up 6 hours   0.0.0.0:80->80/tcp   ecstatic_knuth
+
+As we can see, the ubuntu image is not running, although
+we siad before `docker run ubuntu`.  
+
+
+
+
+
+
 
 
 3. **Remove Image**   
