@@ -71,7 +71,6 @@ the problem.
 
 # Level 2 -> Basic commands : #
 
-## A: About Docker commands : ##
 ```bash
 docker
 docker --version
@@ -136,6 +135,17 @@ docker hub account created.
 
 
 
-## B: Images : ##
+# Level 3 -> Images : #
+
+
+
+
+
+
+
+
+
+
+
 
 
