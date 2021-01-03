@@ -115,6 +115,12 @@ docker images --help
 ▼<br>
 Learn how to use the **images** order
 
+5. **Login to docker hub**   
+```bash
+docker login
+```
+Now enter username and password
+
 
 
 
