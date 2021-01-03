@@ -82,6 +82,10 @@ docker
 ```bash
 docker --version
 ```
+or
+```bash
+docker -V
+```
 ▼<br>
 Docker version 20.10.0, build ...
 
@@ -91,7 +95,18 @@ To display more info about the docker engine, of client and server.
 ```bash
 docker version
 ```
-
+***
+4. **Display information about images and containers**   
+```bash
+docker info
+```
+▼<br>
+Server:<br>
+ Containers: 1<br>
+  Running: 1<br>
+  Paused: 0<br>
+  Stopped: 0<br>
+ Images: 1<br>
 
 
 
