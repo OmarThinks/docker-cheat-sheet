@@ -101,13 +101,19 @@ docker version
 docker info
 ```
 ▼<br>
-Server:<br>
- Containers: 1<br>
-  Running: 1<br>
-  Paused: 0<br>
-  Stopped: 0<br>
- Images: 1<br>
+Containers: 1, Running: 1, Paused: 0, Stopped: 0, Images: 1
 
+5. **Help**   
+```bash
+docker help
+```
+▼<br>
+Get a list of the commands, and how to use them
+```bash
+docker images --help
+```
+▼<br>
+Learn how to use the **images** order
 
 
 
