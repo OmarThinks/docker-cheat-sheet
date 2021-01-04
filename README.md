@@ -239,6 +239,8 @@ If the image name (Ubuntu in this example) was not
  pulled, it will be pulled and run.
 
 
+
+
 2. **Display Containers**   
 This commands will display the containers.
 ```bash
@@ -250,6 +252,29 @@ This code will display info about containers like this:
 
 As we can see, the ubuntu image is not running, although
 we siad before `docker run ubuntu`.  
+
+
+
+
+3. **running interactively**   
+Sometimes we may want to run a container in an interactive
+way, Ubuntu for example.
+```bash
+docker run -it <image_name>
+docker run -it ubuntu 
+```
+On Windows:
+```bash
+winpty docker run -it ubuntu 
+```
+Try these commands:
+```bash
+ls
+exit 
+```
+Now we are running the ubuntu command line.<br>
+If you face any problem on windows, follow up here:<br>
+<a href="https://stackoverflow.com/questions/60875207/docker-oci-runtime-create-failed-container-linux-go349-starting-container-pro">https://stackoverflow.com/questions/60875207/docker-oci-runtime-create-failed-container-linux-go349-starting-container-pro</a>
 
 
 
