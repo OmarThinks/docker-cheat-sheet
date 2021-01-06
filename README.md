@@ -389,27 +389,32 @@ create the docker image
 
 
 ## How to start: ##
-**1. Using the CLI (Command Line Interface), change the directory** to 
-the directory of the folder of the project.
-
-**2. Create a file** called **`Dockerfile`** without extensions  
+**1. Create a file** called **`Dockerfile`** without extensions,
+inside the project folder  
 	For example, do not call it <del>Dockerfile.txt</del>  
 	This is the default name of the docker file  
 	You can give it another, but this is the default name  
 
-**3. Fill the docker file** with data
+**2. Fill the dockerfile** with data
 	This is an example:
 ```Dockerfile
 #Lines startng with hash are comments
 
 #getting the image to build from
-#Here we will start from an image called "scratch"
+#Here we will start from the "ubuntu" image
 
-FROM scratch 
+FROM ubuntu
 ```
 Save the file and close
 
+**3. Using the CLI (Command Line Interface), change the directory** to 
+the directory of the folder of the project that contains the
+dockerfile.
 
+**4. run this command** in the CLI 
+```bash
+docker build .
+```
 
 
 
