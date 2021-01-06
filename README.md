@@ -500,24 +500,12 @@ It will print **"Hello, World!"**
 It is a command to run a docker-compose file.  
 This enables you to **run lots of docker containers at the same time**.
 
-
-
-
 ## docker-compose file language: ##
 **YAML** (YAML Ain't Markup Language).  
 This is a language **like JSON and XML to store data**.  
 It stores data in a **pythonic way**, where what matters the most is 
 **spaces and intends**, in stead of curly braces and tags.  
 So is has the extension of **.yml**
-
-
-
-
-
-
-
-
-
 
 **1. Create a file** called **`docker-compose.yml`** 
 in the project directory 
@@ -571,15 +559,13 @@ services:
 Or erase the version.
 Now the file is working correctly.
 
-
-
 **5. Up and running**:
 in the CLI, type this command:<b>
 ```bash
 docker-compose up -d
 ```
 </b>
-The **d** flag to escape the the command line and to write more codes.
+The <b>d</b> flag to escape the the command line and to write more codes.
 
 Now in the CLI, type this command to display the running containers.
 <b>
@@ -598,6 +584,7 @@ In the browser's adress bar, type this:
 </b>
 To end the containers.  
 
+**6. Shut down**:
 In the CLi type this command:
 <b>
 ```bash
@@ -605,8 +592,32 @@ docker-compose down
 ```
 </b>
 
+**7. Scaling up and down**:
+We use the <b>--scale</b> to scale specific services
+<b>
+```bash
+docker-compose up -d --scale database=4
+```
+</b>
 
+Then:
+<b>
+```bash
+docker-compose up -d --scale database=5
+```
+</b>
 
+Then:
+<b>
+```bash
+docker-compose up -d --scale database=3
+```
+</b>
+Now we can control the number instances of the image.<br>
+This means that we have <b>one redis image, and one nginx image</b>.<br>
+But we have:<br>
+<b>1 nginx container</b>, and <br>
+<b>3 redis containers</b>
 
 
 
