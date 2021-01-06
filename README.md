@@ -573,26 +573,14 @@ Now the file is working correctly.
 
 
 
-**3. Using the CLI (Command Line Interface), change the directory** to 
-the directory of the folder of the project that contains the
-dockerfile.
-
-**4. run this command** in the CLI <b>
+**5. Up and running**:
+in the CLI, type this command:<b>
 ```bash
-docker build -f Dockerfile2 -t testing_image:1.0 .
+docker-compose up -d
 ```
 </b>
-- **-f Dockerfile2**: specify the dockerfile location
-- **-t image_name:image_tag**: 
-specify the name of the image, and the tag
+The **d** flag to escape the the command line and to write more codes.
 
-**5. Now run the image**
-```bash
-docker images
-#Copy the image id
-docker run <image id>
-```
-It will print **"Hello, World!"**
 
 
 
