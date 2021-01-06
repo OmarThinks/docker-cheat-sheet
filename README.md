@@ -581,6 +581,29 @@ docker-compose up -d
 </b>
 The **d** flag to escape the the command line and to write more codes.
 
+Now in the CLI, type this command to display the running containers.
+<b>
+```bash
+docker ps
+```
+</b>
+You will see that the nginx container is running on the port 
+the you specified.  
+
+In the browser's adress bar, type this:  
+<b>
+```bash
+127.0.0.1:9090
+```
+</b>
+To end the containers.  
+
+In the CLi type this command:
+<b>
+```bash
+docker-compose down
+```
+</b>
 
 
 
