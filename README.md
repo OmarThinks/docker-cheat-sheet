@@ -142,11 +142,11 @@ href="https://hub.docker.com/">Docker Hub Website</a>.
 
 ## Images Commands: ##
 ```bash
-docker pull <image_name>
+docker pull <image name>
 docker images
-docker rmi <image_name>
-docker rmi <image_name> --force
-docker rmi <image_name> -f
+docker rmi <image name or id>
+docker rmi <image name or id> --force
+docker rmi <image name or id> -f
 
 ```
 
@@ -154,7 +154,7 @@ docker rmi <image_name> -f
 1. **Download a new Image**   
 Downlaod any image from docker hub
 ```bash
-docker pull <image_name>
+docker pull <image name>
 docker pull ubuntu
 ```
 This code will download the ubuntu docker image
@@ -174,11 +174,11 @@ docker images
 3. **Remove Image**   
 To remove an existing image
 ```bash
-docker rmi <image_name>
+docker rmi <image name or id>
 docker rmi ubuntu
 ```
 This code will uninstall the ubuntu docker image.  
-Now when we run **`docker images`** will will notice that 
+Now when we run **`docker images`** you will notice that 
 the ubuntu mage has been removed.
 ```bash
 docker rmi ubuntu --force
@@ -220,10 +220,10 @@ This will force the image removal.
 ## Containers Commands: ##
 ```bash
 docker images
-docker pull <image_name>
-docker rmi <image_name>
-docker rmi <image_name> --force
-docker rmi <image_name> -f
+docker pull <image name>
+docker rmi <image name>
+docker rmi <image name> --force
+docker rmi <image name> -f
 
 ```
 
@@ -231,7 +231,7 @@ docker rmi <image_name> -f
 1. **Create a Docker Container**   
 To create an image from a container
 ```bash
-docker run <image_name>
+docker run <image name>
 docker run ubuntu
 
 ```
@@ -260,7 +260,7 @@ we siad before `docker run ubuntu`.
 Sometimes we may want to run a container in an interactive
 way, Ubuntu for example.
 ```bash
-docker run -it <image_name>
+docker run -it <image name>
 docker run -it ubuntu 
 ```
 On Windows:
