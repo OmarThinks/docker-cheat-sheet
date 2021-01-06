@@ -69,6 +69,8 @@ the problem.
 
 
 
+
+
 # Level 2 -> Basic commands : #
 
 ```bash
@@ -81,7 +83,6 @@ docker help
 docker images --help
 docker login
 ```
-
 
 **1. Display docker commands**  
 ```bash
@@ -135,7 +136,20 @@ docker hub account created.
 
 
 
-# Level 3 -> Images : #
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Level 3 -> Images  Commands: #
 **Images are the prototypes of the containers.**<br>
 You can find a list of images on the <a 
 href="https://hub.docker.com/">Docker Hub Website</a>.
@@ -150,7 +164,6 @@ docker rmi <image name or id> -f
 
 ```
 
-
 **1. Download a new Image**   
 Downlaod any image from docker hub
 ```bash
@@ -158,8 +171,6 @@ docker pull <image name>
 docker pull ubuntu
 ```
 This code will download the ubuntu docker image
-
-
 
 **2. Display Installed Docker images**   
 To display a list of images that you have
@@ -169,7 +180,6 @@ docker images
 ▼<br>
 	REPOSITORY        TAG       IMAGE ID       CREATED       SIZE<br>
 	docker/getting-started   latest    021a1b85e641   3 weeks ago   27.6MB
-
 
 **3. Remove Image**   
 To remove an existing image
@@ -215,7 +225,7 @@ This will force the image removal.
 
 
 
-# Level 4 -> Containers : #
+# Level 4 -> Container Commands Commands: #
 
 ## Containers Commands: ##
 ```bash
@@ -226,8 +236,6 @@ docker rmi <image name> --force
 docker rmi <image name> -f
 
 ```
-
-
 **1. Create a Docker Container**   
 To create an image from a container  
 
@@ -236,19 +244,8 @@ docker run <image name>
 docker run ubuntu
 
 ```
-
 If the image name (Ubuntu in this example) was not
  pulled, it will be pulled and run.
-
-
-
-
-
-
-
-
-
-
 
 **2. running interactively**   
 Sometimes we may want to run a container in an interactive
@@ -271,17 +268,9 @@ If you face any problem on windows, follow up here:<br>
 <a href="https://stackoverflow.com/questions/60875207/docker-oci-runtime-create-failed-container-linux-go349-starting-container-pro">https://stackoverflow.com/questions/60875207/docker-oci-runtime-create-failed-container-linux-go349-starting-container-pro</a>
 
 
-
-
-
-
-
-
-
 **3. Display Containers**  
 This commands will display the containers.  
 Now run ubuntu in a tab, and run this this command in a new tab.
-
 ```bash
 docker ps
 ```
@@ -292,18 +281,149 @@ This code will display info about containers like this:
 As we can see, the ubuntu image is running.  
 
 
-
-
-**3. Stop a Container**   
+**4. Stop a Container**   
 To remove an existing image
 ```bash
 docker stop <container id>
 ```
-
 run **`docker ps`** to get the id of the ubuntu container running in 
 the first tab.  
 and in the the tab
-run **`docker stop <ubuntu container id>`**
+run **`docker stop <ubuntu container id>`**  
+It will automatically shut down the ubuntu terminal in the first tab.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Level 5 -> System Commands : #
+
+## Containers Commands: ##
+```bash
+docker images
+docker pull <image name>
+docker rmi <image name>
+docker rmi <image name> --force
+docker rmi <image name> -f
+
+```
+**1. Create a Docker Container**   
+To create an image from a container  
+
+```bash
+docker run <image name>
+docker run ubuntu
+
+```
+If the image name (Ubuntu in this example) was not
+ pulled, it will be pulled and run.
+
+**2. running interactively**   
+Sometimes we may want to run a container in an interactive
+way, Ubuntu for example.
+```bash
+docker run -it <image name>
+docker run -it ubuntu 
+```
+On Windows:
+```bash
+winpty docker run -it ubuntu 
+```
+Try these commands:
+```bash
+ls
+exit 
+```
+Now we are running the ubuntu command line.<br>
+If you face any problem on windows, follow up here:<br>
+<a href="https://stackoverflow.com/questions/60875207/docker-oci-runtime-create-failed-container-linux-go349-starting-container-pro">https://stackoverflow.com/questions/60875207/docker-oci-runtime-create-failed-container-linux-go349-starting-container-pro</a>
+
+
+**3. Display Containers**  
+This commands will display the containers.  
+Now run ubuntu in a tab, and run this this command in a new tab.
+```bash
+docker ps
+```
+This code will display info about containers like this:  
+	CONTAINER ID   IMAGE     COMMAND       CREATED         STATUS         PORTS     NAMES
+	a115a0df6e43   ubuntu    "/bin/bash"   2 minutes ago   Up 2 minutes             priceless_colden
+
+As we can see, the ubuntu image is running.  
+
+
+**4. Stop a Container**   
+To remove an existing image
+```bash
+docker stop <container id>
+```
+run **`docker ps`** to get the id of the ubuntu container running in 
+the first tab.  
+and in the the tab
+run **`docker stop <ubuntu container id>`**  
+It will automatically shut down the ubuntu terminal in the first tab.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
