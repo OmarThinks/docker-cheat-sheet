@@ -451,7 +451,8 @@ create the docker image
 	This is an example:
 ```Dockerfile
 FROM ubuntu
-MAINTAINER My Name <myname@example.com>
+LABEL maintainer_name="My Name"
+LABEL maintainer_mail="myname@example.com"
 RUN apt-get update
 CMD ["echo", "Hello, World!"]
 ```
