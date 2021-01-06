@@ -346,33 +346,14 @@ The result:<br>
 
 
 
-**3. Display Containers**  
-This commands will display the containers.  
-Now run ubuntu in a tab, and run this this command in a new tab.
+**3. Deleting unused data**  
 ```bash
-docker ps
+docker system prune
 ```
-This code will display info about containers like this:  
-	CONTAINER ID   IMAGE     COMMAND       CREATED         STATUS         PORTS     NAMES
-	a115a0df6e43   ubuntu    "/bin/bash"   2 minutes ago   Up 2 minutes             priceless_colden
-
-As we can see, the ubuntu image is running.  
-
-
-**4. Stop a Container**   
-To remove an existing image
-```bash
-docker stop <container id>
-```
-run **`docker ps`** to get the id of the ubuntu container running in 
-the first tab.  
-and in the the tab
-run **`docker stop <ubuntu container id>`**  
-It will automatically shut down the ubuntu terminal in the first tab.
-
-
-
-
+This command will delete all the :
+1. Stopped containers
+2. Dangling images 
+(Images not used by at least one container)
 
 
 
