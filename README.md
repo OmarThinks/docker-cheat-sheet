@@ -161,7 +161,6 @@ docker images
 docker rmi <image name or id>
 docker rmi <image name or id> --force
 docker rmi <image name or id> -f
-
 ```
 
 **1. Download a new Image**   
@@ -225,16 +224,14 @@ This will force the image removal.
 
 
 
-# Level 4 -> Container Commands Commands: #
+# Level 4 -> Container Commands: #
 
 ## Containers Commands: ##
 ```bash
-docker images
-docker pull <image name>
-docker rmi <image name>
-docker rmi <image name> --force
-docker rmi <image name> -f
-
+docker run <image name>
+docker run -it <image name>
+docker ps
+docker stop <container id>
 ```
 **1. Create a Docker Container**   
 To create an image from a container  
@@ -242,7 +239,6 @@ To create an image from a container
 ```bash
 docker run <image name>
 docker run ubuntu
-
 ```
 If the image name (Ubuntu in this example) was not
  pulled, it will be pulled and run.
@@ -319,18 +315,20 @@ docker pull <image name>
 docker rmi <image name>
 docker rmi <image name> --force
 docker rmi <image name> -f
-
 ```
-**1. Create a Docker Container**   
-To create an image from a container  
-
+**1. Display information about running containers**   
+run ubuntu in one tab, and in the new tab run this command
 ```bash
-docker run <image name>
-docker run ubuntu
-
+docker stats
 ```
-If the image name (Ubuntu in this example) was not
- pulled, it will be pulled and run.
+This will be the result:  
+▼
+<br>
+	CONTAINER ID   NAME             CPU %     MEM USAGE / LIMIT     MEM %     NET I/O       BLOCK I/O   PIDS  
+	c5cdedbaa437   upbeat_volhard   0.00%     1.805MiB / 2.975GiB   0.06%     1.05kB / 0B   0B / 0B     1
+
+
+
 
 **2. running interactively**   
 Sometimes we may want to run a container in an interactive
