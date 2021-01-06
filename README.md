@@ -524,7 +524,7 @@ in the project directory
 
 
 **2. Fill the dockerfile** with data
-	This is an example:
+	This is an example:<b>
 ```yaml
 version: "1"
 services:
@@ -533,7 +533,7 @@ services:
   web: 
     image: nginx
 ```
-
+</b>
 **3. Using the CLI (Command Line Interface), change the directory** to 
 the directory of the folder of the project that contains the
 docker-compose file.
@@ -541,6 +541,17 @@ docker-compose file.
 **4. Check** that the file can run, using the CLI, run this code:
 ```bash
 docker-compose config
+```
+This will be the result
+```
+Version in ".\docker-compose.yml" is invalid.
+You might be seeing this error because you're using the wrong Compose file version.
+Either specify a supported version (e.g "2.2" or "3.3")
+and place your service definitions under the `services` key,
+or omit the `version` key and place your service definitions at the root of 
+the file to use version 1.
+For more on the Compose file format versions, 
+see https://docs.docker.com/compose/compose-file/
 ```
 
 
