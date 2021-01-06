@@ -498,7 +498,21 @@ It will print **"Hello, World!"**
 
 ## What is docker-compose: ##
 It is a command to run a docker-compose file.  
-This enables you to run lots of docker containers at the same time.
+This enables you to **run lots of docker containers at the same time**.
+
+
+
+
+## docker-compose file language: ##
+**YAML** (YAML Ain't Markup Language).  
+This is a language like JSON and XML to store data.  
+It stores data in a pythonic way, where what matters the most is 
+spaces and intends, in stead of braces.
+
+
+
+
+
 
 
 
