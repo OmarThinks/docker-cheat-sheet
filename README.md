@@ -496,13 +496,52 @@ It will print **"Hello, World!"**
 
 # Level 8 -> docker-compose: #
 
-## What is the docker file: ##
-This is the file that contains the instructions to 
-create the docker image
+## What is docker-compose: ##
+It is a command to run a docker-compose file.  
+This enables you to run lots of docker containers at the same time.
 
 
 
 
+
+
+**1. Create a file** called **`Dockerfile2`** without extensions,
+	with the same instructions as the previous example 
+
+**2. Fill the dockerfile** with data
+	This is an example:
+```Dockerfile
+FROM ubuntu
+LABEL maintainer_name="My Name"
+LABEL maintainer_mail="myname@example.com"
+RUN apt-get update
+CMD ["echo", "Hello, World!"]
+```
+- **MAINTAINER**: Telling information about yourself (Optional)
+- **RUN** will be executed at the creation of the image
+	- This command will update ubuntu to the latest version
+- **CMD**  will be executed at the creation of the container
+
+**3. Using the CLI (Command Line Interface), change the directory** to 
+the directory of the folder of the project that contains the
+dockerfile.
+
+**4. run this command** in the CLI <b>
+```bash
+docker build -f Dockerfile2 -t testing_image:1.0 .
+```
+</b>
+- **-f Dockerfile2**: specify the dockerfile location
+- **-t image_name:image_tag**: 
+specify the name of the image, and the tag
+
+**5. Now run the image**
+```bash
+docker images
+#Copy the image id
+docker run <image id>
+```
+It will print **"Hello, World!"**
 
 
 
