@@ -294,22 +294,16 @@ As we can see, the ubuntu image is running.
 
 
 
-**3. Remove Image**   
+**3. Stop a Container**   
 To remove an existing image
 ```bash
-docker rmi ubuntu
+docker stop <container id>
 ```
-This code will uninstall the ubuntu docker image.  
-Now when we run **`docker images`** will will notice that 
-the ubuntu mage has been removed.
-```bash
-docker rmi ubuntu --force
-```
-or
-```bash
-docker rmi ubuntu -f
-```
-This will force the image removal.
+
+run **`docker ps`** to get the id of the ubuntu container running in 
+the first tab.  
+and in the the tab
+run **`docker stop <ubuntu container id>`**
 
 
 
