@@ -439,11 +439,6 @@ and it is called Dockerfile**
 
 # Level 7 -> Dockerfile  more: #
 
-## What is the docker file: ##
-This is the file that contains the instructions to 
-create the docker image
-
-
 **1. Create a file** called **`Dockerfile2`** without extensions,
 	with the same instructions as the previous example 
 
@@ -465,10 +460,11 @@ CMD ["echo", "Hello, World!"]
 the directory of the folder of the project that contains the
 dockerfile.
 
-**4. run this command** in the CLI 
+**4. run this command** in the CLI <b>
 ```bash
 docker build -f Dockerfile2 -t testing_image:1.0 .
 ```
+</b>
 - **-f Dockerfile2**: specify the dockerfile location
 - **-t image_name:image_tag**: 
 specify the name of the image, and the tag
@@ -489,6 +485,20 @@ It will print **"Hello, World!"**
 
 
 
+
+
+
+
+
+
+
+
+
+# Level 8 -> docker-compose: #
+
+## What is the docker file: ##
+This is the file that contains the instructions to 
+create the docker image
 
 
 
