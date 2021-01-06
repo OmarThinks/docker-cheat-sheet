@@ -505,9 +505,10 @@ This enables you to **run lots of docker containers at the same time**.
 
 ## docker-compose file language: ##
 **YAML** (YAML Ain't Markup Language).  
-This is a language like JSON and XML to store data.  
-It stores data in a pythonic way, where what matters the most is 
-spaces and intends, in stead of braces.
+This is a language **like JSON and XML to store data**.  
+It stores data in a **pythonic way**, where what matters the most is 
+**spaces and intends**, in stead of curly braces and tags.  
+So is has the extension of **.yml**
 
 
 
@@ -518,9 +519,9 @@ spaces and intends, in stead of braces.
 
 
 
+**1. Create a file** called **`docker-compose.yml`** 
+in the project directory 
 
-**1. Create a file** called **`Dockerfile2`** without extensions,
-	with the same instructions as the previous example 
 
 **2. Fill the dockerfile** with data
 	This is an example:
