@@ -455,8 +455,9 @@ MAINTAINER My Name <myname@example.com>
 RUN apt-get update
 CMD ["echo", "Hello, World!"]
 ```
+- **MAINTAINER**: Telling information about yourself (Optional)
 - **RUN** will be executed at the creation of the image
-		- This command will update ubuntu to the latest version
+	- This command will update ubuntu to the latest version
 - **CMD**  will be executed at the creation of the container
 
 **3. Using the CLI (Command Line Interface), change the directory** to 
@@ -465,11 +466,19 @@ dockerfile.
 
 **4. run this command** in the CLI 
 ```bash
-docker build -f Dockerfile2 .
+docker build -f Dockerfile2 -t testing_image:1.0 .
 ```
+- **-f Dockerfile2**: specify the dockerfile location
+- **-t image_name:image_tag**: 
+specify the name of the image, and the tag
 
-
-
+**5. Now run the image**
+```bash
+docker images
+#Copy the image id
+docker run <image id>
+```
+It will print **"Hello, World!"**
 
 
 
