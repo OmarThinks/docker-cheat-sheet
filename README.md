@@ -525,17 +525,24 @@ in the project directory
 
 **2. Fill the dockerfile** with data
 	This is an example:
-```Dockerfile
-FROM ubuntu
-LABEL maintainer_name="My Name"
-LABEL maintainer_mail="myname@example.com"
-RUN apt-get update
-CMD ["echo", "Hello, World!"]
+```yaml
+version: "1"
+services:
+  database: 
+    image: redis
+  web: 
+    image: nginx
 ```
-- **MAINTAINER**: Telling information about yourself (Optional)
-- **RUN** will be executed at the creation of the image
-	- This command will update ubuntu to the latest version
-- **CMD**  will be executed at the creation of the container
+
+**3. Using the CLI (Command Line Interface), change the directory** to 
+the directory of the folder of the project that contains the
+docker-compose file.
+
+**4. Check** that the file can run, using the CLI, run this code:
+```bash
+docker-compose config
+```
+
 
 **3. Using the CLI (Command Line Interface), change the directory** to 
 the directory of the folder of the project that contains the

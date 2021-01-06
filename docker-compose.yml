@@ -1,7 +1,7 @@
 version: "1"
 
 services:
-  web:
-    image:nginx
-  database:
-    image:redis
+  database: 
+    image: redis
+  web: 
+    image: nginx
