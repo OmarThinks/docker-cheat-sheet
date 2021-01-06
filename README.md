@@ -553,6 +553,20 @@ the file to use version 1.
 For more on the Compose file format versions, 
 see https://docs.docker.com/compose/compose-file/
 ```
+**5. Fix** the Mistake:
+<b>
+```yaml
+version: "3.8"
+services:
+  database: 
+    image: redis
+  web: 
+    image: nginx
+```
+</b>
+Or erase the version.
+Now the file is working correctly.
+
 
 
 **3. Using the CLI (Command Line Interface), change the directory** to 
