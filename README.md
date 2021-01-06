@@ -330,25 +330,20 @@ This will be the result:
 
 
 
-**2. running interactively**   
+**2. Displaying disk information**   
 Sometimes we may want to run a container in an interactive
 way, Ubuntu for example.
 ```bash
-docker run -it <image name>
-docker run -it ubuntu 
+docker system df
 ```
-On Windows:
-```bash
-winpty docker run -it ubuntu 
-```
-Try these commands:
-```bash
-ls
-exit 
-```
-Now we are running the ubuntu command line.<br>
-If you face any problem on windows, follow up here:<br>
-<a href="https://stackoverflow.com/questions/60875207/docker-oci-runtime-create-failed-container-linux-go349-starting-container-pro">https://stackoverflow.com/questions/60875207/docker-oci-runtime-create-failed-container-linux-go349-starting-container-pro</a>
+The result:<br>
+▼<br>
+	TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE<br>
+	Images          3         3         100.5MB   0B (0%)<br>
+	Containers      5         1         1.142kB   1.142kB (100%)<br>
+	Local Volumes   0         0         0B        0B<br>
+	Build Cache     0         0         0B        0B<br>
+
 
 
 **3. Display Containers**  
