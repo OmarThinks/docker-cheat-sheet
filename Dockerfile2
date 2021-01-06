@@ -1,0 +1,4 @@
+FROM ubuntu
+MAINTAINER My Name <myname@example.com>
+RUN apt-get update
+CMD ["echo", "Hello, World!"]

@@ -450,14 +450,13 @@ create the docker image
 **2. Fill the dockerfile** with data
 	This is an example:
 ```Dockerfile
-MAINTAINER My Name <myname@example.com>
-
 FROM ubuntu
+MAINTAINER My Name <myname@example.com>
 RUN apt-get update
-
 CMD ["echo", "Hello, World!"]
 ```
 - **RUN** will be executed at the creation of the image
+		- This command will update ubuntu to the latest version
 - **CMD**  will be executed at the creation of the container
 
 **3. Using the CLI (Command Line Interface), change the directory** to 
@@ -466,7 +465,7 @@ dockerfile.
 
 **4. run this command** in the CLI 
 ```bash
-docker build Dockerfile2
+docker build -f Dockerfile2 .
 ```
 
 
