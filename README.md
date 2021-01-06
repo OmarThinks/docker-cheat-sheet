@@ -381,6 +381,36 @@ This command will delete all the :
 
 
 
+# Level 6 -> Dockerfile : #
+
+## What is the docker file: ##
+This is the file that contains the instructions to 
+create the docker image
+```bash
+docker images
+docker pull <image name>
+docker rmi <image name>
+docker rmi <image name> --force
+docker rmi <image name> -f
+```
+**1. Display information about running containers**   
+run ubuntu in one tab, and in the new tab run this command
+```bash
+docker stats
+```
+This will be the result:  
+▼
+<br>
+	CONTAINER ID   NAME             CPU %     MEM USAGE / LIMIT     MEM %     NET I/O       BLOCK I/O   PIDS  
+	c5cdedbaa437   upbeat_volhard   0.00%     1.805MiB / 2.975GiB   0.06%     1.05kB / 0B   0B / 0B     1
+
+
+
+
+
+
+
+
 
 
 
