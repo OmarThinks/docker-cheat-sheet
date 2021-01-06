@@ -243,22 +243,14 @@ If the image name (Ubuntu in this example) was not
 
 
 
-**2. Display Containers**   
-This commands will display the containers.
-```bash
-docker ps
-```
-This code will display info about containers like this:  
-	CONTAINER ID   IMAGE                    COMMAND                  CREATED       STATUS       PORTS                NAMES
-	b3f6bcc79205   docker/getting-started   "/docker-entrypoint.ΓÇª"   6 hours ago   Up 6 hours   0.0.0.0:80->80/tcp   ecstatic_knuth
-
-As we can see, the ubuntu image is not running, although
-we siad before `docker run ubuntu`.  
 
 
 
 
-**3. running interactively**   
+
+
+
+**2. running interactively**   
 Sometimes we may want to run a container in an interactive
 way, Ubuntu for example.
 ```bash
@@ -281,6 +273,23 @@ If you face any problem on windows, follow up here:<br>
 
 
 
+
+
+
+
+
+**3. Display Containers**  
+This commands will display the containers.  
+Now run ubuntu in a tab, and run this this command in a new tab.
+
+```bash
+docker ps
+```
+This code will display info about containers like this:  
+	CONTAINER ID   IMAGE     COMMAND       CREATED         STATUS         PORTS     NAMES
+	a115a0df6e43   ubuntu    "/bin/bash"   2 minutes ago   Up 2 minutes             priceless_colden
+
+As we can see, the ubuntu image is running.  
 
 
 
