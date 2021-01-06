@@ -4,7 +4,10 @@
 ## References : ##
 **Youtube:** <a href="https://www.youtube.com/watch?v=wi-MGFhrad0&list=PLhW3qG5bs-L99pQsZ74f-LC-tOEsBp2rK&index=1">
 Automation Step by Step - Playlist - Docker
-</a>
+</a><br>
+**Youtube:** <a href="https://www.youtube.com/watch?v=wOdrRlz-gQo&list=PLHOC8WGBZWa1zUT2ipvz2woO55TNPahr4&index=1">
+TechiTechnions - Playlist - Dockerfile
+</a><br>
 
 
 # Level 1 -> Up and Running : #
@@ -347,6 +350,7 @@ The result:<br>
 
 
 **3. Deleting unused data**  
+**BE CAREFUL WHEN USING THIS COMMAND**
 ```bash
 docker system prune
 ```
