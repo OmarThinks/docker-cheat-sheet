@@ -11,12 +11,12 @@ Automation Step by Step - Playlist - Docker
 
 
 ## Why Docker? ##
-1. **The same behaviour on different devices**  
+**1. The same behaviour on different devices**  
 With docker you can make sure that your code 
 will show the same results on different devices and platforms.  
 So code will work on the testing environment exactily like
 it works on the production environment.
-2. **Publish your projects, and use other's projects**  
+**2. Publish your projects, and use other's projects**  
 When a project is published on dockerhub, you can pull it easily  
 also others can pull your projects
 
@@ -83,12 +83,12 @@ docker login
 ```
 
 
-1. **Display docker commands**  
+**1. Display docker commands**  
 ```bash
 docker
 ```
 ***
-2. **Display docker version**   
+**2. Display docker version**   
 ```bash
 docker --version
 ```
@@ -100,20 +100,20 @@ docker -V
 Docker version 20.10.0, build ...
 
 ***
-3. **Display docker version with details**   
+**3. Display docker version with details**   
 To display more info about the docker engine, of client and server.
 ```bash
 docker version
 ```
 ***
-4. **Display information about images and containers**   
+**4. Display information about images and containers**   
 ```bash
 docker info
 ```
 ▼<br>
 Containers: 1, Running: 1, Paused: 0, Stopped: 0, Images: 1
 
-5. **Help**   
+**5. Help**   
 ```bash
 docker help
 ```
@@ -125,7 +125,7 @@ docker images --help
 ▼<br>
 Learn how to use the **images** order
 
-6. **Login to docker hub**   
+**6. Login to docker hub**   
 ```bash
 docker login
 ```
@@ -151,7 +151,7 @@ docker rmi <image name or id> -f
 ```
 
 
-1. **Download a new Image**   
+**1. Download a new Image**   
 Downlaod any image from docker hub
 ```bash
 docker pull <image name>
@@ -161,7 +161,7 @@ This code will download the ubuntu docker image
 
 
 
-2. **Display Installed Docker images**   
+**2. Display Installed Docker images**   
 To display a list of images that you have
 ```bash
 docker images
@@ -171,7 +171,7 @@ docker images
 	docker/getting-started   latest    021a1b85e641   3 weeks ago   27.6MB
 
 
-3. **Remove Image**   
+**3. Remove Image**   
 To remove an existing image
 ```bash
 docker rmi <image name or id>
@@ -228,20 +228,22 @@ docker rmi <image name> -f
 ```
 
 
-1. **Create a Docker Container**   
-To create an image from a container
+**1. Create a Docker Container**   
+To create an image from a container  
+
 ```bash
 docker run <image name>
 docker run ubuntu
 
 ```
+
 If the image name (Ubuntu in this example) was not
  pulled, it will be pulled and run.
 
 
 
 
-2. **Display Containers**   
+**2. Display Containers**   
 This commands will display the containers.
 ```bash
 docker ps
@@ -256,7 +258,7 @@ we siad before `docker run ubuntu`.
 
 
 
-3. **running interactively**   
+**3. running interactively**   
 Sometimes we may want to run a container in an interactive
 way, Ubuntu for example.
 ```bash
@@ -283,7 +285,7 @@ If you face any problem on windows, follow up here:<br>
 
 
 
-3. **Remove Image**   
+**3. Remove Image**   
 To remove an existing image
 ```bash
 docker rmi ubuntu
