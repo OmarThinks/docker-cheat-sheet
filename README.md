@@ -386,23 +386,17 @@ This command will delete all the :
 ## What is the docker file: ##
 This is the file that contains the instructions to 
 create the docker image
-```bash
-docker images
-docker pull <image name>
-docker rmi <image name>
-docker rmi <image name> --force
-docker rmi <image name> -f
-```
-**1. Display information about running containers**   
-run ubuntu in one tab, and in the new tab run this command
-```bash
-docker stats
-```
-This will be the result:  
-▼
-<br>
-	CONTAINER ID   NAME             CPU %     MEM USAGE / LIMIT     MEM %     NET I/O       BLOCK I/O   PIDS  
-	c5cdedbaa437   upbeat_volhard   0.00%     1.805MiB / 2.975GiB   0.06%     1.05kB / 0B   0B / 0B     1
+
+
+## How to start: ##
+**1. Using the CLI (Command Line Interface), change the directory** to 
+the directory of the folder of the project.
+
+**2. Create a file** called **`Dockerfile`** without extensions  
+	For example, do not call it <del>Dockerfile.txt</del>  
+	This is the default name of the docker file  
+	You can give it another, but this is the default name  
+
 
 
 
