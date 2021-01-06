@@ -528,10 +528,12 @@ in the project directory
 ```yaml
 version: "1"
 services:
-  database: 
-    image: redis
   web: 
     image: nginx
+    ports:
+    - 9090:80
+  database: 
+    image: redis
 ```
 </b>
 **3. Using the CLI (Command Line Interface), change the directory** to 
@@ -558,10 +560,12 @@ see https://docs.docker.com/compose/compose-file/
 ```yaml
 version: "3.8"
 services:
-  database: 
-    image: redis
   web: 
     image: nginx
+    ports:
+    - 9090:80
+  database: 
+    image: redis
 ```
 </b>
 Or erase the version.
