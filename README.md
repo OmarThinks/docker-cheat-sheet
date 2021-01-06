@@ -397,9 +397,17 @@ the directory of the folder of the project.
 	This is the default name of the docker file  
 	You can give it another, but this is the default name  
 
+**3. Fill the docker file** with data
+	This is an example:
+```Dockerfile
+#Lines startng with hash are comments
 
+#getting the image to build from
+#Here we will start from an image called "scratch"
 
-
+FROM scratch 
+```
+Save the file and close
 
 
 
