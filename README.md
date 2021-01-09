@@ -744,7 +744,7 @@ This will be the result:
 ]
 ```
 
-**4. Remove unused volumes**
+**5. Remove unused volumes**
 <b>
 ```bash
 docker volume prune
@@ -754,7 +754,7 @@ This will remove all the volumes not connected
 with at least one container.
 
 
-**5. Remove specific volume**
+**6. Remove specific volume**
 <b>
 ```bash
 docker volume rm <volume name>
@@ -764,15 +764,24 @@ docker volume rm volume1
 This will remove this specific volume.
 
 
-**5. Connecting a docker container to a specific volume**
+**7. Connecting a docker container to a specific volume**
 This is an example of connecting a jenkins container to a volume.<br>
 You can fimd this example on docker hub, jenkins image.
 <b>
 ```bash
-docker run --name MyJenkins1 -p 8080:8080 -p 50000:50000 -v /your/home:/var/jenkins_home jenkins
+docker run --name MyJenkins1 -p 8080:8080 -p 50000:50000 -v volume1:/var/jenkins_home jenkins
 ```
 </b>
 This will create a docker container called **MyJenkins1** and connect it to the volume.
+
+
+**8. Bind Mounts**
+In stead of using a volume, you can use a physical location.
+<b>
+```bash
+docker run --name MyJenkins1 -p 8080:8080 -p 50000:50000 -v path/to/my/location:/var/jenkins_home jenkins
+```
+
 
 
 
