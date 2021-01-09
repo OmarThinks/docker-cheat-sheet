@@ -821,6 +821,7 @@ In stead of using a volume, you can use a physical location.
 ```bash
 docker run --name MyJenkins1 -p 8080:8080 -p 50000:50000 -v path/to/my/location:/var/jenkins_home jenkins
 ```
+</b>
 
 
 
@@ -845,6 +846,29 @@ docker run --name MyJenkins1 -p 8080:8080 -p 50000:50000 -v path/to/my/location:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+# Level 10 -> docker swarm: #
+
+## What is docker swarm: ##
+Docker swarm is a way run and manage several containers.<br>
+AKA: orchestration.<br>
+There is an other way to do the same thing, that is using 
+**Kubernetes**.
+
+
+## Why docker volume: ##
+1. to
 
 
 
