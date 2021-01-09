@@ -304,12 +304,30 @@ docker ps -a
 ```
 </b>
 This result may look like:
-
 ```bash
 CONTAINER ID   IMAGE          COMMAND                  CREATED      STATUS                     PORTS                  NAMES
 4e4bf85b5573   redis          "docker-entrypoint.sΓÇª"   2 days ago   Up 33 minutes              6379/tcp               docker-cheat-sheet_database_3
 69f54ecb54de   redis          "docker-entrypoint.sΓÇª"   2 days ago   Exited (255) 2 hours ago   6379/tcp               docker-cheat-sheet_database_2
 
+```
+We can differentiate between them from the **STATUS**.<br>
+**- Excited:** Stopped Container<br>
+**- Up:** The container is running
+
+
+
+**6. Running a stopped container**   
+```bash
+docker start <image id>
+docker start 69f54ecb54de
+```
+</b>
+Now, after running `docker ps -a`, the result will look like:
+
+```bash
+CONTAINER ID   IMAGE          COMMAND                  CREATED      STATUS                     PORTS                  NAMES
+4e4bf85b5573   redis          "docker-entrypoint.sΓÇª"   2 days ago   Up 52 minutes              6379/tcp               docker-cheat-sheet_database_3
+69f54ecb54de   redis          "docker-entrypoint.sΓÇª"   2 days ago   Up About a minute          6379/tcp               docker-cheat-sheet_database_2
 ```
 We can differentiate between them from the **STATUS**.<br>
 **- Excited:** Stopped Container<br>
