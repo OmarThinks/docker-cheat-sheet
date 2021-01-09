@@ -744,9 +744,14 @@ This will be the result:
 ]
 ```
 
-
-
-
+**4. Remove unused volumes**
+<b>
+```bash
+docker volume prune
+```
+</b>
+This will remove all the volumes not connected 
+with at least one container.
 
 
 
