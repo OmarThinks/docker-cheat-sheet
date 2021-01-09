@@ -754,6 +754,16 @@ This will remove all the volumes not connected
 with at least one container.
 
 
+**5. Remove specific volume**
+<b>
+```bash
+docker volume rm <volume name>
+docker volume rm volume1
+```
+</b>
+This will remove this specific volume.
+
+
 
 
 
