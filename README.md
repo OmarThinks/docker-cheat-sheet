@@ -705,12 +705,15 @@ Run 'docker volume COMMAND --help' for more information on a command.
 ```
 
 
-
-
 **2. Create Volumes**
 ```bash
 docker volume create <volume name>
 docker volume create volume1
+```
+
+**3. Display Volumes**
+```bash
+docker volume ls
 ```
 
 
