@@ -673,24 +673,40 @@ Docker volume is a seperated place for the to store the data.<br>
 You can connect between several containers and the same volume.
 
 ## Why docker volume: ##
-You can not store the data inside the container.<br>
+By default, data is stored inside the container.<br>
+In production, You can not store the data inside the container.<br>
 Because the container can be deleted in case of scaling up and down.<br>
 So you have to store the data in a separated place, that should not
- be deleted when scaling up or down.<br>
-This place is called the volume.
+be deleted when scaling up or down.<br>
+This place is called the volume.<br>
+When deleting the container, the volume will not be deleted.
 
 
 
 
-## docker-compose file language: ##
-**YAML** (YAML Ain't Markup Language).  
-This is a language **like JSON and XML to store data**.  
-It stores data in a **pythonic way**, where what matters the most is 
-**spaces and intends**, in stead of curly braces and tags.  
-So is has the extension of **.yml**
 
-**1. Create a file** called **`docker-compose.yml`** 
-in the project directory 
+
+**1. Display docker volume commands**
+Inside the CLI, type this command:<b>
+```bash
+docker volume --help
+```
+</b>
+This will be the result:  
+▼<br>
+
+```
+Usage:  docker volume COMMAND
+Manage volumes
+Commands:
+  create      Create a volume
+  inspect     Display detailed information on one or more volumes
+  ls          List volumes
+  prune       Remove all unused local volumes
+  rm          Remove one or more volumes
+Run 'docker volume COMMAND --help' for more information on a command.
+```
+
 
 
 
