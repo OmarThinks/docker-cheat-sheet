@@ -857,7 +857,7 @@ docker run --name MyJenkins1 -p 8080:8080 -p 50000:50000 -v path/to/my/location:
 
 
 
-
+<!--
 # Level 10 -> docker swarm: #
 
 ## What is docker swarm: ##
@@ -866,21 +866,13 @@ AKA: orchestration.<br>
 There is an other way to do the same thing, that is using 
 **Kubernetes**.
 
-
 ## Why docker Swarm: ##
 1. Containers health check
 2. Ensure all containers are up on every system
 3. Scaling the containers up and down depending on load
 4. adding updates and changes to all the containers
 
-
-
-
-
-
-
-
-**1. Validate that docker machine is intalled**
+### 1. Validate that docker machine is intalled
 In the CLI type this code:
 <b>
 ```bash
@@ -899,7 +891,4 @@ Search on google "Install docker machine".
 
 
 
-
-
-
-
+-->
