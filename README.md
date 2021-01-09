@@ -726,6 +726,17 @@ It will print **"Hello, World!"**
 
 
 
+### 6. Understand COPY ###
+<b>
+
+```dockerfile
+COPY src ["path/from", "path/to"]
+```
+</b>
+
+This command copies from the original folder to the folder of image
+
+
 
 
 
