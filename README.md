@@ -11,7 +11,6 @@ TechiTechnions - Playlist - Dockerfile
 
 
 ## Docker commands summary: ##
-
 <b>
 
 ```bash
@@ -65,8 +64,36 @@ docker volume prune
 docker volume rm <volume name>
 docker run --name <image name> -p 8080:8080 -p 50000:50000 -v <volume name>:/var/jenkins_home jenkins
 docker run --name MyJenkins1 -p 8080:8080 -p 50000:50000 -v path/to/my/location:/var/jenkins_home jenkins
+```
+</b>
 
 
+
+## Dockerfile example: ##
+<b>
+
+```Dockerfile
+FROM ubuntu
+LABEL maintainer_name="My Name"
+LABEL maintainer_mail="myname@example.com"
+RUN apt-get update
+CMD ["echo", "Hello, World!"]
+```
+</b>
+
+## Docker-compose example: ##
+
+<b>
+
+```yaml
+version: "1"
+services:
+  web: 
+    image: nginx
+    ports:
+    - 9090:80
+  database: 
+    image: redis
 ```
 </b>
 
@@ -744,7 +771,7 @@ So is has the extension of **.yml**
 in the project directory 
 
 
-### 2. Fill the dockerfile ###
+### 2. Fill the docker-compose ###
 This is an example:
 <b>
 
@@ -757,6 +784,15 @@ services:
     - 9090:80
   database: 
     image: redis
+```
+</b>
+
+9090:80=> This means that 
+
+<b>
+
+```
+expose the port 80 in nginx, on port 9090 on my server
 ```
 </b>
 
