@@ -669,6 +669,11 @@ But we have:<br>
 # Level 9 -> docker volume: #
 
 ## What is docker volume: ##
+Docker volume is a seperated place for the to store the data.
+
+
+
+
 
 ## docker-compose file language: ##
 **YAML** (YAML Ain't Markup Language).  
