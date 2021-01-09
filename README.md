@@ -379,7 +379,8 @@ docker run -it <image name>
 docker ps
 docker stop <container id>
 docker ps -a
-docker start <image id>
+docker start <container id>
+docker rm <container id>
 ```
 </b>
 
@@ -492,7 +493,7 @@ We can differentiate between them from the **STATUS**.<br>
 <b>
 
 ```bash
-docker start <image id>
+docker start <container id>
 docker start 69f54ecb54de
 ```
 </b>
@@ -507,6 +508,14 @@ We can differentiate between them from the **STATUS**.<br>
 **- Excited:** Stopped Container<br>
 **- Up:** The container is running
 
+
+### 7. Deleting a container ###   
+<b>
+
+```bash
+docker rm <container id>
+```
+</b>
 
 
 
