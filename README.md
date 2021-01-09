@@ -706,14 +706,42 @@ Run 'docker volume COMMAND --help' for more information on a command.
 
 
 **2. Create Volumes**
+<b>
 ```bash
 docker volume create <volume name>
 docker volume create volume1
 ```
+</b>
 
 **3. Display Volumes**
+<b>
 ```bash
 docker volume ls
+```
+</b>
+
+**4. Display Volume Details**
+<b>
+```bash
+docker volume inspect <volume name>
+docker volume inspect volume1
+```
+</b>
+This will be the result:  
+▼<br>
+
+```
+[
+    {
+        "CreatedAt": "2021-01-09T09:43:11Z",
+        "Driver": "local",
+        "Labels": {},
+        "Mountpoint": "/var/lib/docker/volumes/volume1/_data",
+        "Name": "volume1",
+        "Options": {},
+        "Scope": "local"
+    }
+]
 ```
 
 
