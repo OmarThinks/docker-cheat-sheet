@@ -292,6 +292,28 @@ run **`docker stop <ubuntu container id>`**
 It will automatically shut down the ubuntu terminal in the first tab.
 
 
+**5. What does it mean to stop a container**   
+This command <b>`docker ps` will only display the running containers.</b>
+<br>
+When a conatiner stops, t doesn't mean that it has been deleted, it 
+just has been stopped.<br>
+This command will display all the containers, even the stopped containers.
+<b>
+```bash
+docker ps -a
+```
+</b>
+This result may look like:
+
+```bash
+CONTAINER ID   IMAGE          COMMAND                  CREATED      STATUS                     PORTS                  NAMES
+4e4bf85b5573   redis          "docker-entrypoint.sΓÇª"   2 days ago   Up 33 minutes              6379/tcp               docker-cheat-sheet_database_3
+69f54ecb54de   redis          "docker-entrypoint.sΓÇª"   2 days ago   Exited (255) 2 hours ago   6379/tcp               docker-cheat-sheet_database_2
+
+```
+We can differentiate between them from the **STATUS**.<br>
+**- Excited:** Stopped Container<br>
+**- Up:** The container is running
 
 
 
