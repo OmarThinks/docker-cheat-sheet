@@ -669,8 +669,15 @@ But we have:<br>
 # Level 9 -> docker volume: #
 
 ## What is docker volume: ##
-Docker volume is a seperated place for the to store the data.
+Docker volume is a seperated place for the to store the data.<br>
+You can connect between several containers and the same volume.
 
+## Why docker volume: ##
+You can not store the data inside the container.<br>
+Because the container can be deleted in case of scaling up and down.<br>
+So you have to store the data in a separated place, that should not
+ be deleted when scaling up or down.<br>
+This place is called the volume.
 
 
 
