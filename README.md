@@ -92,7 +92,8 @@ docker login
 ```
 </b>
 
-### 1. Display docker commands <b>
+### 1. Display docker commands ###
+<b>
 
 ```bash
 docker
@@ -100,7 +101,9 @@ docker
 </b>
 
 ***
-### 2. Display docker version <b>   
+### 2. Display docker version ###
+<b>
+
 ```bash
 docker --version
 ```
@@ -118,7 +121,7 @@ docker -v
 Docker version 20.10.0, build ...
 ```
 ***
-### 3. Display docker version with details   
+### 3. Display docker version with details ### 
 To display more info about the docker engine, of client and server.<b>
 ```bash
 docker version
@@ -127,7 +130,8 @@ docker version
 
 ***
 
-### 4. Display information about images and containers<b>
+### 4. Display information about images and containers ###
+<b>
 
 ```bash
 docker info
@@ -138,7 +142,9 @@ docker info
 ```bash
 Containers: 1, Running: 1, Paused: 0, Stopped: 0, Images: 1
 ```
-### 5. Help   <b>
+### 5. Help ###
+<b>
+
 ```bash
 docker --help
 ```
@@ -151,9 +157,12 @@ docker images --help
 ```
 </b>
 ▼<br>
+
 Learn how to use the **images** order
 
-### 6. Login to docker hub <b>
+### 6. Login to docker hub ###
+<b>
+
 ```bash
 docker login
 ```
@@ -183,47 +192,65 @@ You can find a list of images on the <a
 href="https://hub.docker.com/">Docker Hub Website</a>.
 
 ## Images Commands: ##
-```bash
-docker pull <image name>
-docker images
-docker rmi <image name or id>
-docker rmi <image name or id> --force
-docker rmi <image name or id> -f
-```
+<b>
 
-**1. Download a new Image**   
-Downlaod any image from docker hub
+```bash
+docker pull < image name>
+docker images
+docker rmi < image name or id>
+docker rmi < image name or id> --force
+docker rmi < image name or id> -f
+```
+</b>
+
+### 1. Download a new Image ###
+Download any image from docker hub<b>
 ```bash
 docker pull <image name>
 docker pull ubuntu
 ```
+</b>
 This code will download the ubuntu docker image
 
-**2. Display Installed Docker images**   
-To display a list of images that you have
+### 2. Display Installed Docker images ###   
+To display a list of images that you have<b>
 ```bash
 docker images
 ```
+</b>
 ▼<br>
-	REPOSITORY        TAG       IMAGE ID       CREATED       SIZE<br>
-	docker/getting-started   latest    021a1b85e641   3 weeks ago   27.6MB
 
-**3. Remove Image**   
-To remove an existing image
+```bash
+REPOSITORY        TAG       IMAGE ID       CREATED       SIZE
+docker/getting-started   latest    021a1b85e641   3 weeks ago   27.6MB
+```
+
+### 3. Remove Image ###   
+To remove an existing image<b>
+
 ```bash
 docker rmi <image name or id>
 docker rmi ubuntu
 ```
+
+</b>
 This code will uninstall the ubuntu docker image.  
-Now when we run **`docker images`** you will notice that 
-the ubuntu mage has been removed.
+Now when we run <code><b>docker images</b></code> 
+you will notice that 
+the ubuntu mage has been removed.<b>
+
 ```bash
 docker rmi ubuntu --force
 ```
-or
+
+</b>
+or<b>
+
 ```bash
 docker rmi ubuntu -f
 ```
+</b>
+
 This will force the image removal.
 
 
@@ -261,7 +288,7 @@ docker run -it <image name>
 docker ps
 docker stop <container id>
 ```
-**1. Create a Docker Container**   
+### 1. Create a Docker Container ###
 To create an image from a container  
 
 ```bash
@@ -271,7 +298,7 @@ docker run ubuntu
 If the image name (Ubuntu in this example) was not
  pulled, it will be pulled and run.
 
-**2. running interactively**   
+### 2. running interactively ###   
 Sometimes we may want to run a container in an interactive
 way, Ubuntu for example.
 ```bash
@@ -292,7 +319,7 @@ If you face any problem on windows, follow up here:<br>
 <a href="https://stackoverflow.com/questions/60875207/docker-oci-runtime-create-failed-container-linux-go349-starting-container-pro">https://stackoverflow.com/questions/60875207/docker-oci-runtime-create-failed-container-linux-go349-starting-container-pro</a>
 
 
-**3. Display Containers**  
+### 3. Display Containers ###  
 This commands will display the containers.  
 Now run ubuntu in a tab, and run this this command in a new tab.
 ```bash
@@ -305,7 +332,7 @@ This code will display info about containers like this:
 As we can see, the ubuntu image is running.  
 
 
-**4. Stop a Container**   
+### 4. Stop a Container ###   
 To remove an existing image
 ```bash
 docker stop <container id>
@@ -317,7 +344,7 @@ run **`docker stop <ubuntu container id>`**
 It will automatically shut down the ubuntu terminal in the first tab.
 
 
-**5. What does it mean to stop a container**   
+### 5. What does it mean to stop a container ###   
 This command <b>`docker ps` will only display the running containers.</b>
 <br>
 When a conatiner stops, t doesn't mean that it has been deleted, it 
@@ -341,7 +368,7 @@ We can differentiate between them from the **STATUS**.<br>
 
 
 
-**6. Running a stopped container**   
+### 6. Running a stopped container ###   
 ```bash
 docker start <image id>
 docker start 69f54ecb54de
@@ -384,7 +411,7 @@ docker rmi <image name>
 docker rmi <image name> --force
 docker rmi <image name> -f
 ```
-**1. Display information about running containers**   
+### 1. Display information about running containers ###   
 run ubuntu in one tab, and in the new tab run this command
 ```bash
 docker stats
@@ -398,7 +425,7 @@ This will be the result:
 
 
 
-**2. Displaying disk information**   
+### 2. Displaying disk information ###   
 Sometimes we may want to run a container in an interactive
 way, Ubuntu for example.
 ```bash
@@ -413,8 +440,7 @@ The result:<br>
 	Build Cache     0         0         0B        0B<br>
 
 
-
-**3. Deleting unused data**  
+### 3. Deleting unused data ###  
 **BE CAREFUL WHEN USING THIS COMMAND**
 ```bash
 docker system prune
@@ -534,7 +560,7 @@ docker build -f Dockerfile2 -t testing_image:1.0 .
 - **-t image_name:image_tag**: 
 specify the name of the image, and the tag
 
-**5. Now run the image**
+### 5. Now run the image ###
 ```bash
 docker images
 #Copy the image id
@@ -576,7 +602,7 @@ So is has the extension of **.yml**
 in the project directory 
 
 
-**2. Fill the dockerfile** with data
+### 2. Fill the dockerfile ###
 	This is an example:<b>
 ```yaml
 version: "1"
@@ -608,7 +634,7 @@ the file to use version 1.
 For more on the Compose file format versions, 
 see https://docs.docker.com/compose/compose-file/
 ```
-**5. Fix** the Mistake:
+### **5. Fix** the Mistake: ###
 <b>
 ```yaml
 version: "3.8"
@@ -624,7 +650,7 @@ services:
 Or erase the version.
 Now the file is working correctly.
 
-**5. Up and running**:
+### 6. Up and running ###
 in the CLI, type this command:<b>
 ```bash
 docker-compose up -d
@@ -649,7 +675,7 @@ In the browser's adress bar, type this:
 </b>
 To end the containers.  
 
-**6. Shut down**:
+###7. Shut down ###
 In the CLi type this command:
 <b>
 ```bash
@@ -657,7 +683,7 @@ docker-compose down
 ```
 </b>
 
-**7. Scaling up and down**:
+###8. Scaling up and down ###
 We use the <b>--scale</b> to scale specific services
 <b>
 ```bash
@@ -748,7 +774,7 @@ When deleting the container, the volume will not be deleted.
 
 
 
-**1. Display docker volume commands**
+### 1. Display docker volume commands ###
 Inside the CLI, type this command:<b>
 ```bash
 docker volume --help
@@ -770,7 +796,7 @@ Run 'docker volume COMMAND --help' for more information on a command.
 ```
 
 
-**2. Create Volumes**
+### 2. Create Volumes ###
 <b>
 ```bash
 docker volume create <volume name>
@@ -778,14 +804,14 @@ docker volume create volume1
 ```
 </b>
 
-**3. Display Volumes**
+### 3. Display Volumes ###
 <b>
 ```bash
 docker volume ls
 ```
 </b>
 
-**4. Display Volume Details**
+### 4. Display Volume Details ###
 <b>
 ```bash
 docker volume inspect <volume name>
@@ -809,7 +835,7 @@ This will be the result:
 ]
 ```
 
-**5. Remove unused volumes**
+###5. Remove unused volumes ###
 <b>
 ```bash
 docker volume prune
@@ -818,8 +844,7 @@ docker volume prune
 This will remove all the volumes not connected 
 with at least one container.
 
-
-**6. Remove specific volume**
+###6. Remove specific volume ###
 <b>
 ```bash
 docker volume rm <volume name>
@@ -829,7 +854,7 @@ docker volume rm volume1
 This will remove this specific volume.
 
 
-**7. Connecting a docker container to a specific volume**
+###7. Connecting a docker container to a specific volume ###
 This is an example of connecting a jenkins container to a volume.<br>
 You can fimd this example on docker hub, jenkins image.
 <b>
@@ -840,7 +865,7 @@ docker run --name MyJenkins1 -p 8080:8080 -p 50000:50000 -v volume1:/var/jenkins
 This will create a docker container called **MyJenkins1** and connect it to the volume.
 
 
-**8. Bind Mounts**
+###8. Bind Mounts ###
 In stead of using a volume, you can use a physical location.
 <b>
 ```bash
