@@ -624,3 +624,62 @@ But we have:<br>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Level 9 -> docker volume: #
+
+## What is docker volume: ##
+
+## docker-compose file language: ##
+**YAML** (YAML Ain't Markup Language).  
+This is a language **like JSON and XML to store data**.  
+It stores data in a **pythonic way**, where what matters the most is 
+**spaces and intends**, in stead of curly braces and tags.  
+So is has the extension of **.yml**
+
+**1. Create a file** called **`docker-compose.yml`** 
+in the project directory 
+
+
+
+
