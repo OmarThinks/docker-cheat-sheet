@@ -683,9 +683,6 @@ When deleting the container, the volume will not be deleted.
 
 
 
-
-
-
 **1. Display docker volume commands**
 Inside the CLI, type this command:<b>
 ```bash
@@ -706,6 +703,44 @@ Commands:
   rm          Remove one or more volumes
 Run 'docker volume COMMAND --help' for more information on a command.
 ```
+
+
+
+
+**2. Create Volumes**
+```bash
+docker volume create <volume name>
+docker volume create volume1
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
