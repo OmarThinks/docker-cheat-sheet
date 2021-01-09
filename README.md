@@ -10,6 +10,67 @@ TechiTechnions - Playlist - Dockerfile
 </a><br>
 
 
+## Docker commands summary: ##
+
+<b>
+
+```bash
+# 1) basic Commands
+docker
+docker --version
+docker -v
+docker info
+docker --help
+docker images --help
+docker login
+
+# 2) Image Commands
+docker pull < image name>
+docker images
+docker rmi < image name or id>
+docker rmi < image name or id> --force
+docker rmi < image name or id> -f
+
+# 3) Container Commands
+docker run <image name>
+docker run -it <image name>
+docker ps
+docker stop <container id>
+docker ps -a
+docker start <image id>
+
+# 4) System Commands
+docker stats
+docker system df
+docker system prune
+
+# 5) Dockerfile commands
+docker build .
+docker build -f Dockerfile2 -t testing_image:1.0 .
+docker run <image id>
+
+
+# 6) Docker Compose commands
+docker-compose config
+docker-compose up -d
+docker-compose down
+docker-compose up -d --scale <service name>=number of instances
+
+# 7) Docker Volume Commands:
+docker volume --help
+docker volume create <volume name>
+docker volume ls
+docker volume inspect <volume name>
+docker volume prune
+docker volume rm <volume name>
+docker run --name <image name> -p 8080:8080 -p 50000:50000 -v <volume name>:/var/jenkins_home jenkins
+docker run --name MyJenkins1 -p 8080:8080 -p 50000:50000 -v path/to/my/location:/var/jenkins_home jenkins
+
+
+```
+</b>
+
+
 # Level 1 -> Up and Running : #
 
 
@@ -866,8 +927,6 @@ docker volume prune
 docker volume rm <volume name>
 docker run --name <image name> -p 8080:8080 -p 50000:50000 -v <volume name>:/var/jenkins_home jenkins
 docker run --name MyJenkins1 -p 8080:8080 -p 50000:50000 -v path/to/my/location:/var/jenkins_home jenkins
-
-
 ```
 </b>
 
