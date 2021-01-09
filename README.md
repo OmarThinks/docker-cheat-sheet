@@ -880,3 +880,26 @@ There is an other way to do the same thing, that is using
 
 
 
+**1. Validate that docker machine is intalled**
+In the CLI type this code:
+<b>
+```bash
+docker-machine -v
+```
+</b>
+Result:
+
+```bash
+docker-machine.exe version 0.16.0, build 702c267f
+```
+If you recieved an error, then probably docker machine is not installed
+on your device.<br>
+You may need to install.<br>
+Search on google "Install docker machine".
+
+
+
+
+
+
+
