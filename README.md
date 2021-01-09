@@ -290,6 +290,8 @@ docker run <image name>
 docker run -it <image name>
 docker ps
 docker stop <container id>
+docker ps -a
+docker start <image id>
 ```
 </b>
 
@@ -440,11 +442,9 @@ We can differentiate between them from the **STATUS**.<br>
 <b>
 
 ```bash
-docker images
-docker pull <image name>
-docker rmi <image name>
-docker rmi <image name> --force
-docker rmi <image name> -f
+docker stats
+docker system df
+docker system prune
 ```
 </b>
 
@@ -655,6 +655,19 @@ It will print **"Hello, World!"**
 
 # Level 8 -> docker-compose: #
 
+## docker-compose Commands: ##
+<b>
+
+```bash
+docker-compose config
+docker-compose up -d
+docker-compose down
+docker-compose up -d --scale <service name>=number of instances
+```
+</b>
+
+
+
 ## What is docker-compose: ##
 It is a command to run a docker-compose file.  
 This enables you to **run lots of docker containers at the same time**.
@@ -840,6 +853,24 @@ But we have:<br>
 
 
 # Level 9 -> docker volume: #
+
+## docker volume Commands: ##
+<b>
+
+```bash
+docker volume --help
+docker volume create <volume name>
+docker volume ls
+docker volume inspect <volume name>
+docker volume prune
+docker volume rm <volume name>
+docker run --name <image name> -p 8080:8080 -p 50000:50000 -v <volume name>:/var/jenkins_home jenkins
+docker run --name MyJenkins1 -p 8080:8080 -p 50000:50000 -v path/to/my/location:/var/jenkins_home jenkins
+
+
+```
+</b>
+
 
 ## What is docker volume: ##
 Docker volume is a seperated place for the to store the data.<br>
