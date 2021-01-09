@@ -764,6 +764,16 @@ docker volume rm volume1
 This will remove this specific volume.
 
 
+**5. Connecting a docker container to a specific volume**
+This is an example of connecting a jenkins container to a volume.<br>
+You can fimd this example on docker hub, jenkins image.
+<b>
+```bash
+docker run --name MyJenkins1 -p 8080:8080 -p 50000:50000 -v /your/home:/var/jenkins_home jenkins
+```
+</b>
+This will create a docker container called **MyJenkins1** and connect it to the volume.
+
 
 
 
