@@ -54,6 +54,7 @@ docker-compose config
 docker-compose up -d
 docker-compose down
 docker-compose up -d --scale <service name>=number of instances
+docker-compose up --force-recreate --build -d
 
 # 7) Docker Volume Commands:
 docker volume --help
@@ -771,6 +772,7 @@ docker-compose config
 docker-compose up -d
 docker-compose down
 docker-compose up -d --scale <service name>=number of instances
+docker-compose up --force-recreate --build -d
 ```
 </b>
 
@@ -925,10 +927,16 @@ But we have:<br>
 
 
 
+### 9. Making edits ###
 
-
-
-
+When you edit the original code, and want to make an image and 
+run a container after making the edits, you don't have to 
+remove the image and the container. You can simply run these commands:
+<b>
+```bash
+docker-compose up --force-recreate --build -d
+```
+</b>
 
 
 
