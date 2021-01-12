@@ -382,6 +382,7 @@ docker stop <container id>
 docker ps -a
 docker start <container id>
 docker rm <container id>
+docker rm -f <container id>
 ```
 </b>
 
@@ -518,6 +519,15 @@ docker rm <container id>
 ```
 </b>
 
+
+### 8. Deleting a running container ###   
+<b>
+
+```bash
+docker rm -f <container id>
+```
+</b>
+The **-f** flag is to force the container removal.
 
 
 
