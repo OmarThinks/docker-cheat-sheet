@@ -33,10 +33,13 @@ docker rmi < image name or id> -f
 # 3) Container Commands
 docker run <image name>
 docker run -it <image name>
+winpty docker run -it ubuntu
 docker ps
 docker stop <container id>
 docker ps -a
 docker start <image id>
+docker rm <container id>
+docker rm -f <container id>
 
 # 4) System Commands
 docker stats
@@ -377,6 +380,7 @@ This will force the image removal.
 ```bash
 docker run <image name>
 docker run -it <image name>
+winpty docker run -it ubuntu 
 docker ps
 docker stop <container id>
 docker ps -a
@@ -527,6 +531,7 @@ docker rm <container id>
 docker rm -f <container id>
 ```
 </b>
+
 The **-f** flag is to force the container removal.
 
 
